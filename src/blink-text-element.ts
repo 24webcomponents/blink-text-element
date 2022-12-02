@@ -1,7 +1,15 @@
+/**
+ * ```html
+ * <blink-text>
+ *   This text will blink!
+ * </blink-text>
+ * ```
+ */
 class BlinkTextElement extends HTMLElement {
   #renderRoot = this.attachShadow({mode: 'open'})
 
   connectedCallback(): void {
+    // eslint-disable-next-line github/no-inner-html
     this.#renderRoot.innerHTML = `
     <style>
       :host {

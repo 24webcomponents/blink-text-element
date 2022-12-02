@@ -4,16 +4,23 @@
   "modules": [
     {
       "kind": "javascript-module",
-      "path": "src/custom-element.ts",
+      "path": "src/blink-text-element.ts",
       "declarations": [
         {
           "kind": "class",
-          "description": "An example Custom Element. This documentation ends up in the\nREADME so describe how this elements works here.\n\nYou can event add examples on the element is used with Markdown.\n\n```\n<custom-element></custom-element>\n```",
-          "name": "CustomElementElement",
+          "description": "```html\n<blink-text>\n  This text will blink!\n</blink-text>\n```",
+          "name": "BlinkTextElement",
+          "members": [
+            {
+              "kind": "field",
+              "name": "#renderRoot",
+              "privacy": "private"
+            }
+          ],
           "superclass": {
             "name": "HTMLElement"
           },
-          "tagName": "custom-element",
+          "tagName": "blink-text",
           "customElement": true
         }
       ],
@@ -22,16 +29,16 @@
           "kind": "js",
           "name": "default",
           "declaration": {
-            "name": "CustomElementElement",
-            "module": "src/custom-element.ts"
+            "name": "BlinkTextElement",
+            "module": "src/blink-text-element.ts"
           }
         },
         {
           "kind": "custom-element-definition",
-          "name": "custom-element",
+          "name": "blink-text",
           "declaration": {
-            "name": "CustomElementElement",
-            "module": "src/custom-element.ts"
+            "name": "BlinkTextElement",
+            "module": "src/blink-text-element.ts"
           }
         }
       ]

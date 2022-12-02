@@ -1,11 +1,11 @@
-# &lt;custom-element&gt; element
+# &lt;blink-text&gt; element
 
-Boilerplate for creating a custom element.
+An element which blinks in and out to try to get the users attention like the traditional blink element found in the browsers of yesteryear
 
 ## Installation
-Available on [npm](https://www.npmjs.com/) as [**@github/custom-element-element**](https://www.npmjs.com/package/@github/custom-element-element).
+Available on [npm](https://www.npmjs.com/) as [**blink-text-element**](https://www.npmjs.com/package/blink-text-element).
 ```
-$ npm install --save @github/custom-element-element
+$ npm install --save blink-text-element
 ```
 
 ## Usage
@@ -15,22 +15,19 @@ $ npm install --save @github/custom-element-element
 Import as ES modules:
 
 ```js
-import '@github/custom-element-element'
+import 'blink-text-element'
 ```
 
 Include with a script tag:
 
 ```html
-<script type="module" src="./node_modules/@github/custom-element-element/dist/index.js">
+<script type="module" src="./node_modules/blink-text-element/dist/index.js">
 ```
 
-An example Custom Element. This documentation ends up in the
-README so describe how this elements works here.
-
-You can event add examples on the element is used with Markdown.
-
-```
-<custom-element></custom-element>
+```html
+<blink-text>
+  This text will blink!
+</blink-text>
 ```
 
 ## Browser support
