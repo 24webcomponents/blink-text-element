@@ -1,6 +1,6 @@
 {
   "name": "blink-text-element",
-  "version": "0.0.1",
+  "version": "0.0.0-development",
   "description": "An element which blinks in and out to try to get the users attention like the traditional blink element found in the browsers of yesteryear",
   "main": "dist/blink-text-element.js",
   "module": "dist/blink-text-element.js",
